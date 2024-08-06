@@ -3,19 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>North Carolina Practice Driving Theory Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .title {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .link {
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .link:hover {
+            background: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="score">Score: <span id="score">0</span>. Incorrect <span id='incorrect'>0</span></div>
-        <div id="quiz-container">
-            <!-- Questions will be dynamically added here -->
+        <div class="title">North Carolina Practice Driving Theory Test</div>
+        <img src="https://www.progressive.com/lifelanes/wp-content/uploads/2023/03/PN1542_WhatIfFailDrivingTest_Thumbnail.jpg" alt="Driving Test Image">
+        <div class="description">
+            Prepare for your North Carolina driving theory test with our comprehensive practice test. 
+            Our questions are designed to mirror the actual exam, helping you become familiar with the test format 
+            and ensuring you're ready to pass on your first attempt. Whether you're a new driver or need a refresher, 
+            our practice test is an essential tool for your success.
         </div>
-        <button id="next-btn">Next Question</button>
+        <a href="quiz.html" class="link">Start Practice Test</a>
     </div>
-    <script src="questions.js"></script>
-    <script src="script.js"></script>
+    <footer>
+        <p>View the source code on <a href="https://github.com/AgeOfMarcus/NCDrivingTest" target="_blank">GitHub</a>.</p>
+    </footer>
+
     <script async defer src="https://analytics.marcusj.org/analytics.js"></script>
 </body>
 </html>
